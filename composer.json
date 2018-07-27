@@ -1,0 +1,18 @@
+{
+    "name": "93Lab/framework",
+    "description": "framework boilerplate",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Jitesh Golecha",
+            "email": "hello@93lab.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "src\\": "src/"
+        }
+    }
+}

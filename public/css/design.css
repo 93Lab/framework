@@ -1,0 +1,361 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  color: #172B4D;
+  background: #ffffff;
+	-webkit-font-smoothing: subpixel-antialiased !important;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+  position: relative;
+  font-weight: 400;
+}
+
+/* typography */
+h1 {
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 40px;
+  margin-top: 52px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 29px;
+  font-weight: 500;
+  line-height: 32px;
+  margin-top: 48px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 28px;
+  margin-bottom: 15px;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-top: 24px;
+  margin-bottom: 15px;
+}
+
+h6 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  margin-top: 16px;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 12px;
+  margin-bottom: 15px;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: #222;
+  text-decoration: none;
+}
+
+.text-label {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: #888;
+}
+
+/* helpers */
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+.clearfix {
+    display: block;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-bold {
+  font-weight: 400;
+}
+
+.text-big {
+  font-size: 30px;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+/* icongraphy */
+.icon {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+/* form */
+.form label {
+  display: block;
+  color: #6B778C;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.3333333333333333;
+  padding: 20px 0px 4px 0px;
+}
+
+.form input[type="text"], .form input[type="email"], .form input[type="date"],  .form input[type="time"], .form input[type="number"], .form input[type="password"], .form textarea, .form select {
+  -webkit-appearance: none;
+  background: #f7f8f9;
+  width: 100%;
+  border: 1px solid #f4f5f7;
+  padding: 6px 11px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.form input[type="text"]:focus, .form input[type="email"]:focus, .form input[type="date"]:focus, .form input[type="number"]:focus, .form input[type="password"]:focus, .form textarea:focus, .form select:focus {
+  border: 2px solid #4C9AFF;
+  background-color: #FFFFFF;
+  outline: 0;
+  padding: 5px 10px;
+}
+
+.form input[type="text"], .form input[type="email"], .form input[type="date"], .form input[type="number"], .form input[type="password"], .form select {
+  height: 35px;
+}
+
+/* backgrounds */
+.bg-primary {
+  background: #0052CC;
+  color: #fff;
+}
+
+.bg-secondary {
+  background: #EBECF0;
+  color: #fff;
+}
+
+.bg-danger {
+  background: #FF5630;
+  color: #fff;
+}
+
+.bg-warning {
+  background: #FFAB00;
+}
+
+.bg-success {
+  background: #36B37E;
+}
+
+.bg-info {
+  background: #6554C0;
+  color: #fff;
+}
+
+/* buttons */
+.btn {
+  -webkit-appearance: none;
+  background: #0052CC;
+  color: #ffffff;
+  border: 0;
+  padding: 10px 30px;
+  border-radius: 3px;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn.btn-block {
+  padding: 10px 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.btn.btn-secondary {
+  background: #EBECF0;
+}
+
+.btn.btn-danger {
+  background: #FF5630;
+  color: #fff;
+}
+
+.btn.btn-warning {
+  background: #FFAB00;
+}
+
+.btn.btn-success {
+  background: #36B37E;
+}
+
+.btn.btn-help {
+  background: #6554C0;
+  color: #fff;
+}
+
+/* navigations */
+nav.side .logo {
+  padding: 20px 30px 0 30px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+nav.side {
+  width: 220px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: #f4f5f7;
+}
+
+nav.side .content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+nav.side ul {
+  padding: 5px 20px 20px 20px;
+  display: block;
+  overflow-y: auto;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+nav.side ul li {
+  list-style: none;
+  display: block;
+}
+
+nav.side ul li:hover a {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+}
+
+nav.side ul li.heading {
+  padding: 25px 8px 8px 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #888;
+}
+
+nav.side ul li a {
+  display: block;
+  padding: 8px;
+}
+
+/* content */
+.content-side-nav {
+  padding-left: 220px;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.container.cozy {
+  width: 70%;
+}
+
+.container.compact {
+  width: 60%;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height:8px;
+  background:#eee;
+}
+
+::-webkit-scrollbar-button {
+  width: 8px;
+  height:8px;
+}
+
+::-webkit-scrollbar-track {
+  background:#eee;
+  border: none;
+  box-shadow: 0px 0px 3px #dfdfdf inset;
+}
+
+::-webkit-scrollbar-thumb {
+  background:#BDBDBD;
+  border: none;
+  border-radius:15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background:#CCCCCC;
+}
